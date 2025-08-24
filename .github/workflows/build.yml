@@ -102,26 +102,16 @@ jobs:
 
       # Build with Buildozer
       - name: Build with Buildozer
-        id: buildozer
         run: |
           yes | buildozer -v android debug
 
       # Upload artifacts
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    
 
-    runs-on: ubuntu-latest
-
-    steps:
       - uses: actions/checkout@v2
 
       # Used to cache dependencies with a timeout
       - name: Get Date
-        id: get-date
         run: |
           echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
         shell: bash
