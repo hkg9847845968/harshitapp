@@ -4,7 +4,7 @@
 title = harshit kumar gupta 
 
 # (str) Package name
-package.name = harshit
+package.name = harshitapp
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
