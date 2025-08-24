@@ -114,8 +114,6 @@ jobs:
     branches:
       - main
 
-jobs:
-  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -198,7 +196,6 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
-          python-version: '3.8' #set your python version
 
       # Install pip dependencies
       - name: Install pip dependencies
