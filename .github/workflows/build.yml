@@ -107,9 +107,6 @@ jobs:
           yes | buildozer -v android debug
 
       # Upload artifacts
-name: CI
-
-on:
   push:
     branches:
       - main
